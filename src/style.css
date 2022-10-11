@@ -1,14 +1,20 @@
 body 
-{background-image:url("./fondo2.jpg");
-color:#000000;
- font-family: "roboto";
- font-size:16px;
-  }
-#container
-{ width: 40%;
-    height: auto;
-  background:#fb9139;
-margin:50px auto;
- overflow:auto;
- padding: 25px;
+{
+  background-image: url("./fondo2.png");
+  font-family: Helvetica Neue, Helvetica;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-text-stroke: 0.5px black;
+}
+
+
+#container {
+  width: 40%;
+  height: auto;
+  background-color: rgba(166, 74, 16, 0.68);
+  margin: 50px auto;
+  overflow: auto;
+  padding: 25px;
+  align-items: center;
 }

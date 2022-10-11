@@ -8,13 +8,15 @@ document.getElementById("mensaje1").addEventListener("keyup",function(){
   document.getElementById("encode").addEventListener("click",function(){
     let texto = document.getElementById ("mensaje1").value;
     let correr = document.getElementById("correr").value;
-    document.getElementById("mensaje2").value = cipher.encode(texto,correr);
+    let numero = parseInt(correr);
+    document.getElementById("mensaje2").value = cipher.encode(numero,texto);
   })
   //los elementos nesesarios para la funcion decode
   document.getElementById("decode").addEventListener("click",function(){
     let texto= document.getElementById ("mensaje1").value;
     let correr = document.getElementById ("correr").value;
-    document.getElementById ("mensaje2").value = cipher.decode(texto,correr);
+    let numero = parseInt(correr);
+    document.getElementById ("mensaje2").value = cipher.decode(numero,texto);
   })
 
   
