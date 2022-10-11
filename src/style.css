@@ -1,0 +1,14 @@
+body 
+{background-image:url("./fondo2.jpg");
+color:#000000;
+ font-family: "roboto";
+ font-size:16px;
+  }
+#container
+{ width: 40%;
+    height: auto;
+  background:#fb9139;
+margin:50px auto;
+ overflow:auto;
+ padding: 25px;
+}
