@@ -1,7 +1,30 @@
+document.getElementById("mensaje1").addEventListener("keyup",function(){
+  this.value = this.value.toUpperCase()
+});
+//los elementos nesesarios para la funcion encode
+document.getElementById("encode").addEventListener("click",function(){
+  let texto = document.getElementById ("mensaje1").value;
+  let correr = document.getElementById("correr").value;
+  let numero = parseInt(correr);
+  document.getElementById("mensaje2").value = cipher.encode(numero,texto);
+})
+//los elementos nesesarios para la funcion decode
+document.getElementById("decode").addEventListener("click",function(){
+  let texto= document.getElementById ("mensaje1").value;
+  let correr = document.getElementById ("correr").value;
+  let numero = parseInt(correr);
+  document.getElementById ("mensaje2").value = cipher.decode(numero,texto);
+})
 const cipher = {
 
 
   encode: function(correr,texto){ 
+    if(correr === undefined || texto === undefined) {
+      throw new TypeError ("te falto escribir la clave")
+
+    }else if (correr=== 0 || texto === typeof 0){
+      throw new TypeError ("Solo puedes escribir letras mayusculas")}
+    
     var resultado = "";
      for(var i=0;i<texto.length;i++){
        var ascii= texto.charCodeAt(i);
@@ -19,6 +42,11 @@ const cipher = {
     },
    
     decode: function(correr,texto){ 
+      if(correr=== undefined || texto === undefined) {
+        throw new TypeError ("te falto escribir la clave")
+  
+      }else if (correr === 0 || texto === typeof 0){
+        throw new TypeError ("Solo puedes escribir letras mayusculas")}
       var resultado = "";
        for(var i=0;i<texto.length;i++){
          var ascii= texto.charCodeAt(i);
@@ -33,7 +61,7 @@ const cipher = {
           }
          
       return resultado;
-      },
+      }
      
     } 
-export default cipher;
+//export default cipher;

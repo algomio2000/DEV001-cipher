@@ -18,3 +18,15 @@ body
   padding: 25px;
   align-items: center;
 }
+
+#mensaje1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22;
+
+}
+
+#mensaje2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22;
+
+}
