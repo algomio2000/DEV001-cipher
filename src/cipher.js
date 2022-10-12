@@ -8,6 +8,10 @@ const cipher = {
 
     }else if (correr=== 0 || texto === typeof 0){
       throw new TypeError ("Solo puedes escribir letras mayusculas")}
+     
+     else if (correr === null || texto === null){
+      throw new  TypeError("Ingresa un codigo valido")
+     }
     
     var resultado = "";
      for(var i=0;i<texto.length;i++){
@@ -31,6 +35,10 @@ const cipher = {
   
       }else if (correr === 0 || texto === typeof 0){
         throw new TypeError ("Solo puedes escribir letras mayusculas")}
+
+        else if (correr === null || texto === null){
+          throw new  TypeError("Ingresa un codigo valido")
+         }
       var resultado = "";
        for(var i=0;i<texto.length;i++){
          var ascii= texto.charCodeAt(i);
