@@ -1,0 +1,32 @@
+body 
+{
+  background-image: url("./fondo2.png");
+  font-family: Helvetica Neue, Helvetica;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  -webkit-text-stroke: 0.5px black;
+}
+
+
+#container {
+  width: 40%;
+  height: auto;
+  background-color: rgba(166, 74, 16, 0.68);
+  margin: 50px auto;
+  overflow: auto;
+  padding: 25px;
+  align-items: center;
+}
+
+#mensaje1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+
+}
+
+#mensaje2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+
+}
