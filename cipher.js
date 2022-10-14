@@ -55,11 +55,9 @@ const cipher = {
       return resultado;
       }
      
-    } 
+    }; 
 export default cipher;
 
 
 
-//<p><button id="botonCifrar">Esconde mi secreto</button>
-            //<button id="botonDescifrar">Muéstrame mi secreto</button></p>
 
